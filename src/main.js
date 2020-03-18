@@ -9,7 +9,10 @@ import VueRouter from 'vue-router'
 import About from './components/About'
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
-import Interests from './components/Interests'
+import Interests from './components/Interests';
+import Project from './components/Project';
+
+
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-solid-svg-icons'
@@ -28,7 +31,12 @@ const routes = [
   { path: '/about', component: About },
   { path: '/portfolio', component: Portfolio },
   { path: '/contact', component: ContactMe },
-  { path: '/interests', component: Interests }
+  { path: '/interests', component: Interests },
+    {
+        path: "/portfolio/:slug",
+        name: "project",
+        component: Project
+    }
 
 ]
 
