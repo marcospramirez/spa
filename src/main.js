@@ -13,6 +13,10 @@ import Interests from './components/Interests';
 import Project from './components/Project';
 
 
+import VueSimpleMarkdown from 'vue-simple-markdown'
+import 'vue-simple-markdown/dist/vue-simple-markdown.css'
+
+Vue.use(VueSimpleMarkdown)
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-solid-svg-icons'

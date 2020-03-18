@@ -2,9 +2,9 @@
     <div class="post-card">
         <div class="card">
             <div class="card-image">
-                <figure class="image is-square">
-                    <img :src="image" alt="Placeholder image">
-                </figure>
+
+                <div class="image-holder" :style="{backgroundImage: 'url(\'' + image + '\')' }"></div>
+
             </div>
             <div class="card-content">
                 <div class="media">
@@ -15,7 +15,8 @@
                 </div>
                 <div class="content">
                     <p>{{snippet}}</p>
-                    <router-link :to="'/project/'+slug" class="button is-fullwidth">View Project</router-link>
+                    <router-link :to="'/portfolio/'+slug" class="button is-fullwidth">View Project</router-link>
+                    <a :href="link" target="_blank" class="button is-fullwidth">See it live!</a>
                 </div>
             </div>
         </div>
@@ -30,7 +31,24 @@
             date: String,
             snippet: String,
             image: String,
-            slug: String
+            slug: String,
+            link: String
         }
     };
 </script>
+
+<style scoped>
+    .post-card{
+        height: 100%;
+    }
+
+    .card{
+        height: 100%;
+    }
+    .image-holder{
+        height: 300px;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+    }
+</style>

@@ -26,7 +26,6 @@
 <style scoped>
     nav {
         background: #F1F1F1;
-        margin-bottom: 40px;
     }
 
     ul {

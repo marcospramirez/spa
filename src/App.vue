@@ -61,9 +61,7 @@
     }
 
     p{
-      padding: 0 30px;
       text-align: left;
       line-height: 27px;
-
     }
   </style>
