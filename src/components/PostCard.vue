@@ -15,8 +15,10 @@
                 </div>
                 <div class="content">
                     <p>{{snippet}}</p>
-                    <router-link :to="'/portfolio/'+slug" class="button is-fullwidth">View Project</router-link>
-                    <a :href="link" target="_blank" class="button is-fullwidth">See it live!</a>
+                    <div class="links">
+                        <router-link :to="'/portfolio/'+slug" class="button is-fullwidth">View Project</router-link>
+                        <a :href="link" target="_blank" class="button is-fullwidth">See it live!</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,6 +40,15 @@
 </script>
 
 <style scoped>
+
+    .links a:first-child{
+        background-color: #0097d1;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .title{
+        margin-bottom: 0.5rem !important;
+    }
     .post-card{
         height: 100%;
     }
