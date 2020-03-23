@@ -62,4 +62,8 @@
         background-size: cover;
         background-position: center;
     }
+
+    .media-content{
+        overflow: unset;
+    }
 </style>
