@@ -11,7 +11,7 @@
             <a class="email" href="mailto:mrcrmz@gmail.com">mrcrmz@gmail.com</a>
         </div>
         <br/>
-        <img alt="Marcos at work" src="@/assets/images/contact/marcos_computer.jpg" height="250">
+        <img alt="Marcos at work" src="@/assets/images/contact/marcos_computer.JPG" height="250">
     </div>
 </template>
 
