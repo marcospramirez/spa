@@ -9,14 +9,21 @@ import VueRouter from 'vue-router'
 import About from './components/About'
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
-import Interests from './components/Interests'
+import Interests from './components/Interests';
+import Project from './components/Project';
+
+
+import VueSimpleMarkdown from 'vue-simple-markdown'
+import 'vue-simple-markdown/dist/vue-simple-markdown.css'
+
+Vue.use(VueSimpleMarkdown)
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faInstagram, faLinkedin, faTwitch} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faTwitter, faInstagram, faLinkedin)
+library.add(faTwitter, faInstagram, faLinkedin, faTwitch)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
@@ -28,7 +35,12 @@ const routes = [
   { path: '/about', component: About },
   { path: '/portfolio', component: Portfolio },
   { path: '/contact', component: ContactMe },
-  { path: '/interests', component: Interests }
+  { path: '/interests', component: Interests },
+    {
+        path: "/portfolio/:slug",
+        name: "project",
+        component: Project
+    }
 
 ]
 

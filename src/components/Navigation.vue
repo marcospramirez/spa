@@ -7,9 +7,9 @@
             <li>
                 <router-link v-bind:to="'/portfolio'">Portfolio</router-link>
             </li>
-            <li>
-                <router-link v-bind:to="'/interests'">Interests</router-link>
-            </li>
+<!--            <li>-->
+<!--                <router-link v-bind:to="'/interests'">Interests</router-link>-->
+<!--            </li>-->
             <li>
                 <router-link v-bind:to="'/contact'">Contact Me</router-link>
             </li>
@@ -26,7 +26,6 @@
 <style scoped>
     nav {
         background: #F1F1F1;
-        margin-bottom: 40px;
     }
 
     ul {
