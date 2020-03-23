@@ -7,9 +7,9 @@
         <p>I graduated in May 2019 from St. Edward’s University in Austin, and I'm excited to gain more experience in web
         development and design. I am adept with both backend and frontend development, but I
         am looking to focus on frontend. I’m a fast learner and would especially love to work with
-        technologies such as React and Vue (which I built this site with).</p>
+            technologies such as React and Vue (which I used to build this website with help from this <a href="https://dev.to/markjohnson303/building-a-portfolio-site-with-vue-bulma-and-airtable-5a58" target="_blank">tutorial</a>).</p>
 
-        <p>Download my <a href="@/assets/marcos_ramirez_resume.pdf" download>Resume</a>.</p>
+        <p>Download my <a href="/static/marcos_ramirez_resume.pdf" download>Resume</a>.</p>
     </div>
 </template>
 
@@ -26,7 +26,7 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        margin-top: 60px;
+        margin: 40px auto;
     }
 
     @media screen and (max-width: 400px)
@@ -41,5 +41,6 @@
         -webkit-box-shadow: 0px 6px 7px -1px rgba(189,189,189,1);
         -moz-box-shadow: 0px 6px 7px -1px rgba(189,189,189,1);
         box-shadow: 0px 6px 7px -1px rgba(189,189,189,1);
+        margin-bottom: 40px;
     }
 </style>

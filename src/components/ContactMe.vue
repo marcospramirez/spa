@@ -1,10 +1,11 @@
 <template>
-    <div>
+    <div class="section">
         <h3>Follow me on social or get in touch!</h3>
         <div class="icons">
             <a href="https://twitter.com/MarcosRamirez65" target="_blank"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
             <a href="https://www.instagram.com/marcoslikesthings/" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
             <a href="https://www.linkedin.com/in/marcos-ramirez-033494130/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
+            <a href="https://m.twitch.tv/badmartian412/profile" target="_blank"><font-awesome-icon :icon="['fab', 'twitch']" /></a>
         </div>
         <div>
             <a class="email" href="mailto:mrcrmz@gmail.com">mrcrmz@gmail.com</a>
@@ -23,7 +24,7 @@
 <style scoped>
     .icons a{
         font-size: 40px;
-        color: #3f3b5d;
+        color: #0097d1;
         padding: 10px 5px;
         display: inline-block;
         width: 50px;

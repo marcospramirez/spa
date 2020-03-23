@@ -9,7 +9,7 @@ Axios.defaults.headers.common = {'Authorization': `Bearer ` + process.env.VUE_AP
 
 export default{
     getProjects() {
-        return Axios.get()
+        return Axios.get("?view=Ordered")
     },
     getProject(slug) {
         return Axios.get("?filterByFormula={Slug}='" + slug + "'")

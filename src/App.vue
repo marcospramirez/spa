@@ -64,4 +64,8 @@
       text-align: left;
       line-height: 27px;
     }
+
+    a{
+      color: #0097d1;
+    }
   </style>

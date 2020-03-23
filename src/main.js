@@ -20,10 +20,10 @@ Vue.use(VueSimpleMarkdown)
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faInstagram, faLinkedin, faTwitch} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faTwitter, faInstagram, faLinkedin)
+library.add(faTwitter, faInstagram, faLinkedin, faTwitch)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
